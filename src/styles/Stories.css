@@ -1,0 +1,60 @@
+/* =====================
+   STORIES (MOBILE)
+===================== */
+.stories {
+  padding: 40px 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.story-card {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.story-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.story-image {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.story-card h3 {
+  color: var(--ink);
+  margin-bottom: 6px;
+  font-size: 1.1rem;
+}
+
+.story-role {
+  color: var(--green);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.story-text {
+  color: #425149;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .stories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,101 @@
+/* Not Found Page Styles */
+
+.not-found-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  background: var(--sand);
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.error-code {
+  font-size: 8rem;
+  font-weight: 900;
+  color: var(--green);
+  line-height: 1;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.not-found-content h1 {
+  font-size: 2.5rem;
+  color: var(--ink);
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+
+.error-message {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.error-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.helpful-links {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 2px solid var(--border);
+}
+
+.helpful-links h3 {
+  font-size: 1.25rem;
+  color: var(--ink);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.helpful-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.helpful-links a {
+  color: var(--green);
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.helpful-links a:hover {
+  background: var(--card);
+  transform: translateX(4px);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .error-code {
+    font-size: 12rem;
+  }
+
+  .not-found-content h1 {
+    font-size: 3rem;
+  }
+
+  .helpful-links ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,286 @@
+/* Volunteer Page Styles */
+
+.volunteer-page {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.volunteer-hero {
+  background: linear-gradient(135deg, var(--green), var(--green-deep));
+  color: white;
+  padding: 100px 0 80px;
+  text-align: center;
+}
+
+.volunteer-hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.volunteer-hero-content .lead {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.95;
+  line-height: 1.7;
+}
+
+/* Benefits Section */
+.benefits-section {
+  padding: 80px 0;
+  background: var(--sand);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.benefits-grid {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 1fr;
+}
+
+.benefit-card {
+  background: var(--card);
+  padding: 32px;
+  border-radius: 16px;
+  text-align: center;
+  border: 2px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--green);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.benefit-card h3 {
+  font-size: 1.5rem;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.benefit-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Opportunities Section */
+.opportunities-section {
+  padding: 80px 0;
+  background: var(--card);
+}
+
+.opportunities-grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr;
+}
+
+.opportunity-card {
+  background: var(--sand);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.opportunity-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.opp-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.opp-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.opportunity-card:hover .opp-image img {
+  transform: scale(1.05);
+}
+
+.opp-content {
+  padding: 28px;
+}
+
+.opp-content h3 {
+  font-size: 1.5rem;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.opp-content p {
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.opp-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 16px;
+  border-top: 2px solid var(--border);
+}
+
+.opp-detail {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.opp-detail strong {
+  color: var(--green);
+  font-weight: 700;
+}
+
+/* Application Section */
+.application-section {
+  padding: 80px 0;
+  background: var(--sand);
+}
+
+.application-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-header h2 {
+  font-size: 2rem;
+  color: var(--ink);
+  margin: 12px 0 16px;
+}
+
+.form-header p {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.volunteer-form {
+  background: var(--card);
+  padding: 32px;
+  border-radius: 16px;
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+
+.form-row {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  margin-bottom: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-field:last-of-type {
+  margin-bottom: 28px;
+}
+
+.form-field label {
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  padding: 14px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  font-size: 1rem;
+  color: var(--text);
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: var(--green);
+  outline: none;
+}
+
+.form-field input:disabled,
+.form-field select:disabled,
+.form-field textarea:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit Button Spacing */
+.volunteer-form .btn-full {
+  margin-top: 8px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .volunteer-hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .opportunities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .volunteer-hero {
+    padding: 120px 0 100px;
+  }
+
+  .benefits-section,
+  .opportunities-section,
+  .application-section {
+    padding: 100px 0;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .opportunities-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

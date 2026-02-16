@@ -1,0 +1,278 @@
+/* Contact Page Styles */
+
+.contact-page {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.contact-hero {
+  background: linear-gradient(135deg, var(--green), var(--green-deep));
+  color: white;
+  padding: 100px 0 80px;
+  text-align: center;
+}
+
+.contact-hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.contact-hero-content .lead {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.95;
+  line-height: 1.7;
+}
+
+/* Contact Info Section */
+.contact-info-section {
+  padding: 80px 0 40px;
+  background: var(--sand);
+}
+
+.contact-info-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+
+.info-card {
+  background: var(--card);
+  padding: 32px;
+  border-radius: 16px;
+  text-align: center;
+  border: 2px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+}
+
+.info-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.info-card h3 {
+  font-size: 1.5rem;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+.info-card p {
+  color: var(--text-secondary);
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  padding: 60px 0 80px;
+  background: var(--sand);
+}
+
+.contact-grid {
+  display: grid;
+  gap: 48px;
+  grid-template-columns: 1fr;
+}
+
+.form-container h2 {
+  font-size: 2rem;
+  color: var(--ink);
+  margin-bottom: 32px;
+}
+
+.contact-form {
+  background: var(--card);
+  padding: 32px;
+  border-radius: 16px;
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+
+.form-row {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  margin-bottom: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-field:last-of-type {
+  margin-bottom: 28px;
+}
+
+.form-field label {
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  padding: 14px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  font-size: 1rem;
+  color: var(--text);
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: var(--green);
+  outline: none;
+}
+
+.form-field input:disabled,
+.form-field select:disabled,
+.form-field textarea:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Submit Button Spacing */
+.contact-form .btn-full {
+  margin-top: 8px;
+}
+
+/* Map Container */
+.map-container {
+  position: relative;
+}
+
+.map-placeholder {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  min-height: 400px;
+  box-shadow: var(--shadow-lg);
+}
+
+.map-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+  padding: 32px;
+  text-align: left;
+}
+
+.map-overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.map-overlay p {
+  margin: 4px 0;
+  opacity: 0.9;
+}
+
+.map-overlay .btn {
+  margin-top: 16px;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 80px 0;
+  background: var(--card);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.faq-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: var(--sand);
+  padding: 28px;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+}
+
+.faq-item h3 {
+  font-size: 1.25rem;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.faq-item p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .contact-hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .contact-info-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+
+  .form-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-hero {
+    padding: 120px 0 100px;
+  }
+
+  .contact-info-section,
+  .contact-form-section,
+  .faq-section {
+    padding: 100px 0;
+  }
+
+  .map-placeholder {
+    min-height: 600px;
+  }
+}

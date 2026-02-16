@@ -1,0 +1,51 @@
+/* =====================
+   PROGRAMS (MOBILE)
+===================== */
+.programs {
+  padding: 50px 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.program-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e6ede6;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.program-icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.program-card h3 {
+  color: var(--ink);
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.program-card p {
+  color: #425149;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .programs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

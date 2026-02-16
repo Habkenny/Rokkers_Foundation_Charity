@@ -1,0 +1,71 @@
+/* =====================
+   MISSION (MOBILE)
+===================== */
+.mission {
+  padding: 60px 0;
+  text-align: left;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.mission-grid {
+  display: grid;
+  gap: 30px;
+}
+
+.mission-list {
+  margin-top: 16px;
+  list-style: disc;
+  padding-left: 22px;
+  color: #2c2c2c;
+}
+
+.mission-card {
+  background: var(--card);
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.mission-card h3 {
+  color: var(--ink);
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+}
+
+.mission-progress {
+  margin-top: 16px;
+}
+
+.progress-track {
+  background: #edf0ed;
+  border-radius: 999px;
+  height: 12px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, var(--green), #6fbf8e);
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.progress-label {
+  font-size: 0.85rem;
+  color: #425149;
+  font-weight: 600;
+}
+
+.mission-text {
+  max-width: 100%;
+  color: #1f3028;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .mission-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: start;
+  }
+}
